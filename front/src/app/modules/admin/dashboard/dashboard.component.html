@@ -1,0 +1,19 @@
+<div class="container d-flex flex-md-row mt-4">
+ <div class="col-6 b m-2">
+  <h4 class="mt-3 text-center card-title">Mis Recetas!</h4>
+  <app-recipies></app-recipies>
+ </div>
+ <div class="col-6 b m-2">
+  <div *ngIf="isRecipie else showRecipie">
+   <h4 class="mt-3 text-center card-title">Agregar Receta</h4>
+   <app-add-recipie (cancelRec)="lala()"></app-add-recipie>
+  </div>
+ </div>
+</div>
+
+<ng-template #showRecipie>
+ <div class="d-flex justify-content-center align-items-center h-100">
+  <button class="btn btn-primary" (click)="addRecipie()">Agregar receta</button> 
+ </div>
+</ng-template>
+

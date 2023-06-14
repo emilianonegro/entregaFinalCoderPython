@@ -1,0 +1,33 @@
+<div class="animate__animated animate__fadeIn p-3">
+ <form [formGroup]="form">
+   <div class="form-group field-required">
+     <label>Titulo receta</label>
+     <input formControlName="title" class="form-control">
+   </div>
+   <div>
+    <label  class="mb-0">Image Receta</label>
+    <div class="d-flex">
+      <div class="mr-3 my-2">
+        <label for="inputLogo" class="btn btn-info" >Seleccione imagen</label>
+        <input type="file" id="inputLogo" accept="image/*" hidden="true">
+      </div>
+    </div>
+  </div>
+  <div class="form-group field-required">
+    <label>Tiempo preparacion</label>
+    <input formControlName="time" class="form-control">
+  </div>
+  <div class="form-group field-required">
+   <label>Ingredientes</label>
+   <input formControlName="ingredients" class="form-control">
+  </div>
+  <div class="form-group">
+   <label>Paso a paso</label>
+   <input formControlName="steps" class="form-control">
+  </div>
+  <div class="text-center">
+   <button class="btn btn-primary" (click)="saveForm()">Guardar</button>
+   <a class="btn btn-warning ml-3" (click)="cancelRecipie()">Cancelar</a>
+  </div>
+ </form>
+</div>

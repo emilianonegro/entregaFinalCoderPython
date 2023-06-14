@@ -1,0 +1,9 @@
+.favoriteBtn:hover {
+ cursor: pointer;
+}
+
+
+.img-no-recipie {
+ border-radius: 100%;
+ width: 65%;
+}
