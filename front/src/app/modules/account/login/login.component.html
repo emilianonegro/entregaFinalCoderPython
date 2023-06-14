@@ -1,0 +1,29 @@
+<div class="h-100">
+ <div class="d-flex h-100 align-items-center text-center animated fadeIn">
+   <div class="account-box">
+     <div class="account-wrapper">
+       <h3 class="account-title">Login</h3>
+       <form  style="text-align: left;">
+         <div class="form-group field-required">
+           <label>Email</label>
+           <input formControlName="email" class="form-control" type="text">
+         </div>
+         <div class="form-group field-required">
+           <div class="row">
+             <div class="col">
+               <label>Password</label>
+             </div>
+           </div>
+           <input formControlName="password" class="form-control" type="password">
+         </div>
+         <div class="form-group text-center">
+           <a class="btn btn-primary account-btn" (click)="logIn()">Login</a>
+         </div>
+         <div class="account-footer">
+           <p><span>Don't have an account yet?</span>&nbsp;<a [routerLink]="['/account', 'register']">Register</a></p>
+         </div>
+       </form>
+     </div>
+   </div>
+ </div>
+</div>

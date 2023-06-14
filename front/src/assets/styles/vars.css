@@ -1,0 +1,45 @@
+/* Variables */
+:root {
+	--theme-color: #9c4fd3;
+  --theme-color-alt: #6e3c91;
+  
+  --theme-control-background: #2e3439;
+  --theme-background: #16191c;
+  --theme-background-alt: #23272b;
+
+  --theme-foreground: #bbc4cc;
+  --theme-foreground-alt: #23272b;
+  --theme-foreground-highlight: #ffffff;
+
+  /* Calendar */
+  --fc-today-bg-color: #23272b;
+
+  /* Shifts */
+  --shift-unassigned: #D3D3D3;
+  --shift-unassigned-text: var(--theme-foreground-alt);
+  --shift-applicable: #5ecace;
+  --shift-applicable-text: var(--theme-foreground-alt);
+  --shift-to-be-approved: #71af4d;
+  --shift-to-be-approved-text: var(--theme-foreground-alt);
+  --shift-exchange-request: #9c4fd3;
+  --shift-exchange-request-text:var(--theme-foreground-alt);
+  --shift-assigned: #ffff66;
+  --shift-assigned-pinned: #2600ff;
+  --shift-assigned-text: var(--theme-foreground-alt);
+  --shift-assigned-warning: #ff8000;
+  --shift-assigned-warning-text: var(--theme-foreground-alt);
+  --shift-assigned-ok: #55ce63;
+  --shift-assigned-ok-text: var(--theme-foreground-alt);
+  --shift-assigned-danger: #b30000;
+  --shift-assigned-danger-text: var(--theme-foreground);
+
+  /* Availabilities */
+  --employee-absent: #bda460;
+  --employee-absent-text: var(--theme-foreground-alt);
+  --employee-unavailable: #b30000;
+  --employee-unavailable-text: var(--theme-foreground);
+  --employee-desired: #55ce63;
+  --employee-desired-text: var(--theme-foreground-alt);
+  --employee-undesired: #ff8000;
+  --employee-undesired-text: var(--theme-foreground-alt);
+}

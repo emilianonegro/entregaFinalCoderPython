@@ -1,0 +1,741 @@
+@import "smart-hr.css";
+@import "vars.css";
+
+html, body, div {
+  scrollbar-color: var(--theme-color) var(--theme-background);
+}
+
+.page-wrapper {
+    padding-top: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.page-title {
+    color: var(--theme-color);
+}
+
+.text-theme {
+  color: var(--theme-color);
+}
+
+.overflow-y {
+  overflow-y: auto;
+  width: 100%;
+}
+
+.sidebar-menu li a:hover {
+  cursor: pointer;
+}
+
+.sidebar-menu ul ul a.active {
+  text-decoration: none;
+}
+
+.waitSpinner {
+  position: absolute;
+  top: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+}
+
+.calWaitSpinnerBackground {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.waitSpinnerBackground {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.account-box .form-group {
+	margin-bottom: 12px;
+}
+
+.filter-container {
+  padding: 12px;
+}
+
+.dropdown-menu {
+  font-size: 14px;
+}
+
+.dropdown-item {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+.user-menu-item {
+  padding: .8rem .8rem
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: var(--theme-foreground);
+  color: var(--theme-foreground-alt);
+}
+
+.dropdown-notification:focus, .dropdown-notification:hover {
+  color: var(--theme-foreground-alt) !important;
+  background-color: var(--theme-foreground);
+  color: var(--theme-foreground-alt);
+}
+
+ag-grid-angular {
+    width: 100%;
+    height: 100%;
+}
+
+.ag-cell {
+    overflow: visible;
+  }
+
+  .ag-row {
+      z-index: 0;
+  }
+
+  .ag-row.ag-row-focus {
+      z-index: 1;
+  }
+  .ag-root.ag-layout-auto-height,
+  .ag-body-viewport.ag-layout-auto-height,
+  .ag-body-viewport-wrapper.ag-layout-auto-height {
+      overflow: visible;
+  }
+
+.action-menu {
+    cursor: pointer;
+}
+
+.action-menu-icon {
+  width: 1.2rem;
+  text-align: center;
+}
+
+.dropdown-menu {
+    z-index: 10000;
+    background-color: var(--theme-control-background);
+    border: solid 1px var(--theme-foreground);
+    border-radius: 5px;
+}
+
+.dropdown-item {
+    color: var(--theme-foreground) !important;
+}
+
+.dropdown-item:hover {
+  color: var(--theme-foreground-alt) !important;
+}
+
+.margin-auto-vertical {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.margin-auto {
+    margin: auto !important;
+}
+
+ng-select {
+  border-radius: 0.25rem;
+}
+
+textarea.ng-invalid.ng-touched,
+input.ng-invalid.ng-touched,
+select.ng-invalid.ng-touched,
+ng-select.ng-invalid.ng-touched,
+ng-select.invalid,
+timepicker.ng-invalid.ng-touched input
+ {
+  border: 1px solid #f62d51 !important;
+  margin-bottom: 3px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 2px 0.5px rgba(255, 255, 255, 0.5), 0 0 4px 3px var(--theme-color-alt);
+}
+
+.form-error {
+  color: #f62d51;
+  font-size: 14px;
+}
+
+.form-group.field-required label:not(.error):after {
+  content: " *";
+  color: red;
+}
+
+.btn-dialog {
+  min-width: 50px;
+}
+
+.btn-default {
+  color: var(--theme-foreground);
+  background-color: var(--theme-control-background);
+}
+
+.btn-default:hover {
+  color: var(--theme-color);
+}
+
+.btn-primary {
+  background-color: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+.btn-primary:focus {
+  background-color: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+.btn-primary:hover, .btn-primary.active, .btn-primary:active, .open > .dropdown-toggle.btn-info {
+  background-color: var(--theme-color-alt) !important;
+  border-color: var(--theme-color-alt) !important;
+}
+
+.btn-link:hover {
+  color: var(--theme-color);
+}
+
+.color-theme {
+  color:  var(--theme-color);
+}
+
+
+.btn-group .fc-resourceTimelineDay-button{
+  border-radius: 5px 0px 0px 5px !important;
+  margin-left: .75em !important;
+}
+.fc-timeGridDay-button, .fc-multiSelectButton-button{
+  border-radius: 5px 0px 0px 5px !important;
+}
+
+input:disabled + .checktoggle {
+  cursor: not-allowed;
+}
+
+.progress {
+  background-color: var(--theme-foreground);
+  color: var(--theme-foreground)
+}
+
+.progress > .progress-bar {
+  background-color: var(--theme-color);
+}
+
+/* tables */
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  border-width: 0px !important;
+  z-index: 2;
+}
+tr.highlight {
+	background-color: var(--theme-background);
+	color: #fff;
+}
+
+td.v-middle {
+  vertical-align: middle;
+}
+
+td.garrison {
+  background-color: var(--theme-background);
+}
+
+table.estimate-shifts-table {
+  border-left: solid 1px var(--ag-row-border-color, var(--ag-secondary-border-color, rgba(88, 86, 82, 0.5)));
+  border-right: solid 1px var(--ag-row-border-color, var(--ag-secondary-border-color, rgba(88, 86, 82, 0.5)));
+  background-color: var(--ag-background-color, #181d1f);
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+}
+
+table.estimate-shifts-table thead {
+  background-color: var(--ag-header-background-color, #222628);
+  color: var(--theme-color);
+  box-shadow: inset 0 1px 0 var(--ag-border-color, #68686e), inset 0 -1px 0 var(--ag-border-color, #68686e);
+}
+
+table.estimate-shifts-table thead tr {
+  border-bottom: solid 1px var(--ag-row-border-color, var(--ag-secondary-border-color, rgba(88, 86, 82, 0.5)));
+  height: 42px;
+}
+
+table.estimate-shifts-table thead tr th {
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-bottom: 5px;
+}
+
+table.estimate-shifts-table tbody tr {
+  border-bottom: solid 1px var(--ag-row-border-color, var(--ag-secondary-border-color, rgba(88, 86, 82, 0.5)));
+  height: 42px;
+}
+
+table.estimate-shifts-table tbody tr td {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+table.estimate-shifts-table tbody tr:nth-of-type(2n+1) {
+  background-color: var(--ag-background-color, #181d1f);
+}
+
+table.estimate-shifts-table tbody tr:nth-of-type(2n) {
+  background-color: var(--ag-odd-row-background-color, #222628);
+}
+
+/* ng-select */
+.ng-select.ng-select-single .ng-select-container {
+  cursor: pointer;
+  height: 36px;
+}
+
+.ng-select.ng-select-focused:not(.ng-select-opened) > .ng-select-container {
+  box-shadow: 0 0 2px 0.5px rgba(255, 255, 255, 0.5), 0 0 4px 3px var(--theme-color-alt);
+}
+
+.ng-select .ng-select-container .ng-value-container .ng-input > input {
+  color: var(--theme-foreground);
+}
+
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value {
+  background-color: var(--theme-background-alt);
+}
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-label {
+  color: var(--theme-foreground);
+}
+
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon.left {
+  color: var(--theme-foreground);
+}
+
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon.left:hover {
+  color: var(--theme-foreground-alt);
+}
+
+.ng-select .ng-select-container  {
+  border: 0px;
+  background-color: var(--theme-control-background);
+  color: var(--theme-foreground);
+}
+
+.ng-dropdown-panel {
+  background-color: var(--theme-control-background);
+}
+
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected, .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected.ng-option-marked {
+  background-color: var(--theme-control-background);
+  color: var(--theme-foreground);
+}
+
+.ng-select-container {
+  background-color: var(--theme-control-background);
+}
+
+.ng-select.ng-select-opened > .ng-select-container {
+  background-color: var(--theme-control-background);
+}
+
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option {
+  background-color: var(--theme-background-alt);
+  color: var(--theme-foreground);
+}
+
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-marked {
+  background-color: var(--theme-foreground);
+  color: var(--theme-foreground-alt);
+}
+
+.ng-select.ng-select-focused:not(.ng-select-opened) > .ng-select-container {
+  border-color: var(--theme-color);
+}
+
+.ng-select.ng-select-disabled > .ng-select-container {
+  background-color: #444a4f;
+  cursor: not-allowed;
+}
+
+.ng-select.ng-select-multiple.ng-select-disabled > .ng-select-container .ng-value-container .ng-value {
+  cursor: not-allowed;
+}
+
+.ng-select.ng-select-multiple.ng-select-disabled > .ng-select-container .ng-value-container .ng-value > .ng-value-label {
+  color: var(--theme-foreground-alt);
+}
+
+/* Datepicker */
+.bs-datepicker {
+  background: var(--theme-background-alt);
+}
+
+.bs-datepicker-body {
+  border: 1px solid var(--theme-color-alt);
+}
+
+.bs-datepicker-buttons {
+  border-top: 0px;
+}
+
+.bs-datepicker-head {
+  background-color: var(--theme-color-alt);
+}
+
+.bs-datepicker-body table td span.selected, .bs-datepicker-body table td.selected span, .bs-datepicker-body table td span[class*="select-"]::after, .theme-green .bs-datepicker-body table td[class*="select-"] span::after {
+  background-color: var(--theme-color-alt);
+}
+
+.bs-datepicker-body table td {
+  color: var(--theme-foreground);
+}
+
+span.ng-star-inserted:hover {
+  color: var(--theme-foreground-alt);
+}
+
+.bs-datepicker-body table td span.is-other-month, .bs-datepicker-body table td.is-other-month span {
+  color: var(--theme-color);
+}
+
+.bs-datepicker-buttons div .btn-success {
+  background-color: var(--theme-color-alt);
+  border: var(--theme-color-alt);
+}
+
+.bs-datepicker-buttons div .btn-success:not(:disabled):not(.disabled).active,
+.bs-datepicker-buttons div .btn-success:not(:disabled):not(.disabled):active {
+  background-color: var(--theme-color);
+  border: var(--theme-color);
+}
+
+/* Scrollbars */
+.scrollbars {
+  scrollbar-width: thin;
+  scrollbar-color: var(--theme-color) var(--theme-background);
+}
+
+/* Scrollbars (only Chrome) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: var(--theme-color);
+}
+
+/* Calendar */
+.event-not-editable {
+  opacity: 0.5;
+}
+
+.fc-view {
+  margin-top: 15px;
+}
+
+.fc-h-event {
+  border: 0px !important;
+}
+
+.fc-v-event {
+  border: 0px !important;
+}
+
+.fc-timeline-event {
+  border-radius: 3px !important;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 0px !important;
+}
+
+.fc-toolbar-title {
+  color: var(--theme-color);
+}
+
+.fc-daygrid-day-top {
+  color: var(--theme-color);
+}
+
+.fc-daygrid-day-events {
+  color: var(--theme-background);
+}
+
+.fc-timeline-slot-total-label {
+  font-size: 12px;
+  border-bottom: 1px solid var(--theme-color-alt) !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+
+.fc-multiSelectActions-button {
+  border-radius: 5px !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.fc .fc-daygrid-more-link {
+  color: var(--theme-foreground) !important;
+}
+
+.fc-col-header, .fc-daygrid-body-balanced {
+  width: 100% !important;
+}
+
+.fc-scrollgrid-sync-table{
+  width: 100% !important;
+}
+
+.fc .fc-popover-title {
+  color: var(--theme-foreground-alt);
+}
+.fc .fc-popover-header{
+  background-color: var(--theme-control-background);
+  border-bottom: 1px solid var(--theme-foreground);
+}
+
+.fc .fc-popover-header span{
+  color: var(--theme-foreground);
+}
+
+.fc-popover-close {
+  color: var(--theme-foreground-alt);
+}
+
+.availability-employee {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.shift-employee {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.bs-datepicker-body table td {
+  color: var(--theme-foreground-highlight);
+}
+
+.shift-unassigned {
+  background-color: var(--shift-unassigned) !important;
+  border: 2px solid var(--shift-unassigned) !important;
+}
+.shift-unassigned .fc-event-main {
+  color: var(--shift-unassigned-text) !important;
+}
+
+.shift-applicable {
+  background-color: var(--shift-applicable) !important;
+}
+.shift-applicable .fc-event-main {
+  color: var(--shift-applicable-text) !important;
+}
+
+.shift-to-be-approved {
+  background-color: var(--shift-to-be-approved) !important;
+}
+.shift-to-be-approved .fc-event-main {
+  color: var(--shift-to-be-approved-text) !important;
+}
+
+.shift-exchange-request {
+  background-color: var(--shift-exchange-request) !important;
+}
+.shift-exchange-request .fc-event-main {
+  color: var(--shift-exchange-request-text) !important;
+}
+
+.shift-assigned {
+  background-color: var(--shift-assigned) !important;
+  border: 2px solid var(--shift-assigned) !important;
+
+}
+.shift-assigned .fc-event-main {
+  color: var(--shift-assigned-text) !important;
+}
+
+.shift-assigned-warning {
+  background-color: var(--shift-assigned-warning) !important;
+  border: 3px solid var(--shift-assigned-warning) !important;
+}
+.shift-assigned-warning .fc-event-main {
+  color: var(--shift-assigned-warning-text) !important;
+}
+
+.shift-assigned-danger {
+  background-color: var(--shift-assigned-danger) !important;
+  border: 3px solid var(--shift-assigned-danger) !important;
+
+}
+.shift-assigned-danger .fc-event-main {
+  color: var(--shift-assigned-danger-text) !important;
+}
+
+.shift-assigned-ok {
+  background-color: var(--shift-assigned-ok) !important;
+  border: 3px solid var(--shift-assigned-ok) !important;
+}
+.shift-assigned-ok .fc-event-main {
+  color: var(--shift-assigned-ok-text) !important;
+}
+.shift-assigned-pinned{
+  border: 3px solid var(--shift-assigned-pinned) !important;
+}
+
+.availability-absent {
+  background-color: var(--employee-absent) !important;
+  color: var(--employee-absent-text) !important;
+}
+.availability-absent .fc-event-main {
+  color: var(--employee-absent-text) !important;
+}
+
+.availability-unavailable {
+  background-color: var(--employee-unavailable) !important;
+  color: var(--employee-unavailable-text) !important;
+}
+.availability-unavailable .fc-event-main {
+  color: var(--employee-unavailable-text) !important;
+}
+
+.availability-desired {
+  background-color: var(--employee-desired) !important;
+  color: var(--employee-desired-text) !important;
+}
+.availability-desired .fc-event-main {
+  color: var(--employee-desired-text) !important;
+}
+
+.availability-undesired {
+  background-color: var(--employee-undesired) !important;
+  color: var(--employee-undesired-text) !important;
+}
+.availability-undesired .fc-event-main {
+  color: var(--employee-undesired-text) !important;
+}
+
+/* Rotations */
+.rotation-employee {
+  cursor: pointer;
+  min-width: 150px;
+  max-width: 150px;
+  border-radius: 5px;
+  background-color: var(--theme-background);
+  border: solid 1px var(--theme-foreground);
+  margin-right: 5px;
+  white-space: nowrap;
+}
+
+.rotation-employee-assigned {
+  background-color: var(--shift-assigned-ok);
+  color: var(--theme-foreground-alt);
+}
+
+.rotation-employee p {
+  margin: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rotation-employee-index {
+  min-width: 150px;
+  max-width: 150px;
+  margin-right: 5px;
+}
+
+/* Score */
+.score-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.score-container p {
+  margin-right: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.hightlight-on-hover:hover {
+  color: var(--theme-color);
+  cursor: default;
+}
+
+/* Ng select */
+.ng-input {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.ng-select.ng-select-single .ng-select-container .ng-value-container .ng-input {
+  top: 0;
+}
+
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-placeholder {
+  top: 0;
+}
+
+/* Fix for td borders in firefox */
+.fc-liquid-hack td, .fc-liquid-hack th {
+  background-clip: padding-box;
+}
+
+.table-bordered td, .table-bordered th {
+  border: 1px solid var(--theme-color-alt);
+}
+
+.modal label {
+  color: var(--theme-foreground);
+}
+
+.modal-lg, .modal-xl {
+  max-width: 1000px;
+}
+
+.round-color {
+  width: 30px;
+  height: 30px;
+  border: solid 1px var(--theme-foreground-highlight);
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+
+ .fc-timegrid-event-harness  .fc-timegrid-event  .fc-event-main  div  span {
+  display: none;
+ }
+ .fc-timegrid-event-harness  .fc-timegrid-event  .fc-event-main  div a i{
+  width: 0px !important;
+ }
+
+
+ .fc-daygrid-event div span{
+  display: none;
+ }
+
+ .fc-daygrid-event div a i{
+  width: 100% !important;
+
+ }
+
+ .fc-daygrid-event-harness .fc-daygrid-dot-event{
+  justify-content: center;
+ }
+
+ .modal-content{
+  margin-top: 20vh;
+ }
+
+}

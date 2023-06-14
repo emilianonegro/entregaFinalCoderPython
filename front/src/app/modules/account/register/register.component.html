@@ -1,0 +1,36 @@
+<div class="h-100">
+ <div class="d-flex h-100 align-items-center text-center animated fadeIn">
+   <div class="account-box">
+     <div class="account-wrapper">
+       <h3 class="account-title">Register</h3>
+       <!-- <form [formGroup]="form" (ngSubmit)="onSubmit()" style="text-align: left;"> -->
+        <form style="text-align: left;">
+         <div class="form-group field-required">
+           <label>Email</label>
+           <input formControlName="email" class="form-control" type="email">
+         </div>
+         <div class="form-group field-required">
+           <label>First name</label>
+           <input formControlName="firstName" class="form-control" type="text">
+         </div>
+         <div class="form-group field-required">
+           <label>Last name</label>
+           <input formControlName="lastName" class="form-control" type="text">
+         </div>
+         <div class="form-group field-required" formGroupName="passwords">
+           <label>Password</label>
+           <input formControlName="password" class="form-control" type="password">
+         </div>
+         <div class="form-group field-required mb-4" formGroupName="passwords">
+           <label>Confirm password</label>
+           <input formControlName="confirmPassword" class="form-control" type="password">
+         </div>
+         <div class="form-group text-center">
+           <button class="btn btn-primary account-btn" type="submit" [routerLink]="['/account', 'login']">Register</button>
+         </div>
+         <div class="account-footer">
+           <p>Already have an account?</p><a [routerLink]="['/account/login']">Login</a>
+         </div>
+       </form>
+ </div>
+</div>
