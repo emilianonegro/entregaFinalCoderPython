@@ -1,11 +1,13 @@
 <div class="container d-flex flex-md-row mt-4">
- <div class="col-5 border m-2">
-  Recetas
+ <div class="col-6 border2 m-2 d-flex flex-column">
+  <h4 class="mt-3 text-center card-title">Recetas!</h4>
+  <app-recipies></app-recipies>
  </div>
- <div class="col-5 border m-2">
-  elegida
+ <div class="col-5 border2 m-2 p-0">
+  <app-show-recipies></app-show-recipies>
  </div>
- <div class="col-2 border m-2">
-  favoritas
+ <div class="col-1 border2 m-2 d-flex flex-column align-items-center">
+  <h5 class="mt-3">Favoritas</h5>
+  <app-show-favorites></app-show-favorites>
  </div>
 </div>

@@ -1,0 +1,12 @@
+img {
+ width:  75px;
+ height: 75px;
+ border-radius: 100%;
+}
+
+.fav-container:hover {
+ cursor: pointer;
+ opacity: .7;
+ transition: .5s;
+
+}

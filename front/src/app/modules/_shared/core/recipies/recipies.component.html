@@ -1,0 +1,19 @@
+<div>
+ <div class="card-container d-flex align-items-center py-3" style="height: 7rem;">
+  <img class="card-img-top" src="../../../../assets/img/pexels.jpg" alt="Card image cap">
+  <div class="card-body p-0 px-2 w-75">
+   <h5 class="card-title m-0">Wraps</h5>
+   <p class="card-text">Wraps veganos, super rapidos de hacer!</p>
+  </div>
+  <div class="card-body p-0 pr-4 d-flex flex-column align-items-center ">
+   <i class="bi bi-clock"></i>
+   <p class="card-text">30min.</p>
+  </div>
+  <div>
+   <a class="btn btn-primary" *ngIf="!isAdmin"><i class="bi bi-eye"></i></a>
+   <a (click)="editRecipie()" class="btn btn-info mb-1" *ngIf="isAdmin"><i class="bi bi-pencil-fill"></i></a>
+   <a (click)="deleteRecipie()" class="btn btn-danger" *ngIf="isAdmin"><i class="bi bi-trash"></i></a>
+  </div>
+ </div>
+ <hr>
+</div>

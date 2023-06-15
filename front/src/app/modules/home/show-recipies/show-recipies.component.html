@@ -1,0 +1,38 @@
+<div class="" style="height: 700px;" *ngIf="isRecipe else noRecipe">
+ <img class="card-img-top" src="../../../../assets/img/pexels.jpg" alt="Card image cap" style="height: 200px; object-fit: cover;">
+ <div class="card-body">
+   <h5 class="card-title">Ingredientes:</h5>
+   <ul>
+    <li>Rapidita</li>
+    <li>Pimineto</li>
+    <li>Carne</li>
+    <li>Tomate</li>
+    <li>Cebolla</li>
+   </ul>
+  <h5 class="card-title">Paso a paso:</h5>
+  <ul>
+   <li>Cortar verduras</li>
+   <li>Cortar Carne</li>
+   <li>Cocinar ambas cosas por separado durante 15min</li>
+   <li>Cocinar todo junto durante 15 min</li>
+   <li>Armar Wraps y comer</li>
+  </ul>
+</div>
+<div class="card-body">
+ <div class="d-flex">
+  <a href="#" class="btn btn-primary mr-3">Compartir</a>
+  <h3 class="mt-1" *ngIf="!isFavorite"><a class="favoriteBtn" (click)="onFavorite()"><i class="bi bi-heart"></i></a></h3>
+  <h3 class="mt-1" *ngIf="isFavorite"><a class="favoriteBtn" (click)="onFavorite()"><i class="bi bi-heart-fill"></i></a></h3>
+ </div>
+</div>
+</div>
+<ng-template #noRecipe>
+ <div class="d-flex align-items-center justify-content-between flex-column" style="height: 700px;">
+  <h4 class="card-title">Hora de cocinar!</h4>
+   <div class="d-flex flex-column align-items-center">
+    <img class="img-no-recipie mb-3" src="../../../../assets/img/eggs.jpg" alt="Card image cap" style="object-fit: cover;">
+    <p>Elige una receta</p>
+   </div>
+   <div class=""></div>
+ </div>
+</ng-template>
